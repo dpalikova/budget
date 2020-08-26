@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link rel="stylesheet" type="text/css" href="./css/all.min.css">
+    </head>
+    <body>
+        <main>
+            <section class="header">
+                <div>
+                    <h3>Available Budget in <span class="date"></span>:</h3>
+                    <h2 class="budget">0</h2>
+                    <div class="income">
+                        <div>Income</div>
+                        <div class="income_holder">0</div>
+                    </div>
+                    <div class="expenses">
+                        <div>Expenses</div>
+                        <div class="percentage">
+                            <div class="expenses_holder">0</div>
+                            <div class="percentage_holder">0%</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="new_record">
+                <form class="form">
+                    <select class="record_type">
+                        <option title="Income">+</option>
+                        <option title="Expense">-</option>
+                    </select>
+                    <input class="description" type="text" placeholder="Add description">
+                    <input class="value" type="number" step="1" placeholder="Value">
+                    <div><a class="create" href="javascript:;" title="Create Record"><i class="far fa-check-circle"></i></a></div>
+                    <div><a class="reset" href="javascript:;" title="Reset Record"><i class="far fa-window-close"></i></a></div>
+                </form>
+            </section>
+            <section class="records">
+                <div>
+                    <div class="income">
+                        <div>
+                        <h4>Income</h4>
+                            <div>
+                                <span>Sort by:</span>
+                                <select class="income_sort">
+                                    <option title="Date" value="desc_date">Date (desc)</option>
+                                    <option title="Date" value="asc_date">Date (asc)</option>
+                                    <option title="Value" value="desc_value">Value (desc)</option>
+                                    <option title="Value" value="asc_value">Value (asc)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <ul class="income_records_holder">
+                        </ul>
+                    </div>
+                    <div class="expenses">
+                        <div>
+                            <h4>Expenses</h4>
+                            <div>
+                                <span>Sort by:</span>
+                                <select class="expenses_sort">
+                                    <option title="Date" value="desc_date">Date (desc)</option>
+                                    <option title="Date" value="asc_date">Date (asc)</option>
+                                    <option title="Value" value="desc_value">Value (desc)</option>
+                                    <option title="Value" value="asc_value">Value (asc)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <ul class="expenses_records_holder">
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="js/custom.js"></script>
+    </body>
+</html>
